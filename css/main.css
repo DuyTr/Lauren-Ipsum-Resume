@@ -1,0 +1,272 @@
+/* Fonts*/
+@font-face {
+  font-family: 'Open-Sans';
+  src:url('../fonts/OpenSans-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Open-Sans';
+  src:url('../fonts/OpenSans-Bold.ttf');
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Open-Sans';
+  src:url('../fonts/OpenSans-BoldItalic.ttf');
+  font-style: italic;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Open-Sans';
+  src:url('../fonts/OpenSans-Italic.ttf');
+  font-style: italic;
+  font-weight: normal;
+}
+/*----------------------*/
+body{
+    background: lightgrey;
+    font-size: 16px;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.15;
+    font-family: 'Open-Sans', Arial, sans-serif;
+}
+
+p {
+  margin-top: 10px;
+}
+
+h1              { font-size: 2.2em; margin: .25em 0 }
+h2              { font-size: 1.4em; margin: .250em 0 }
+h3              { font-size: 1.1em; margin: .25em 0 }
+h1, h2, h3, h4,
+h5, h6          { font-weight: bold }
+
+h2{
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+h3{
+  color: #feaa3a;
+}
+
+a{
+  color: #feaa3a;
+  text-decoration: none;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.clearfix:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.billboard{
+  background: url('../images/birds.jpg') no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+
+.wrapper{
+    margin: 0 auto;
+    padding: 40px 8%;
+}
+
+.caption{
+    padding: 90px 0 30px 0;
+    text-align: center;
+    color: white
+}
+
+.caption h1{
+  border-bottom:2px solid #333;
+  display: inline-block;
+  padding:10px;
+}
+
+.caption h3{
+  color: white;
+}
+
+.resize{
+  width: 100px;;
+  height: auto;
+}
+
+.billboard .wrapper{
+  background-color:rgba(0, 0, 0, 0.5);
+  padding: 30px 8%;
+  color:white;
+}
+
+.billboard h2{
+  border: none;
+  color: #feaa3a;
+}
+
+.info{
+  background-color: white;
+}
+
+.skill{
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('../images/clouds.jpg') no-repeat;
+  background-size:cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+}
+
+.skill h2{
+  border-color: white;
+}
+
+footer{
+  background: black;
+  color: white;
+  font-size: .8em;
+}
+
+footer h2{
+  border-color: #cccccc;
+  font-size: 1.4em;
+}
+/*---------Mobile------------*/
+body{
+  text-align: center;
+}
+
+ul li{
+    list-style: none;
+    display: block;
+    float: left;
+    text-align: center;
+    width:100%;
+}
+
+.billboard ul li:first-child{
+  text-align: center;
+}
+
+.info p{
+  text-align: left;
+}
+
+.skill ul li{
+    list-style: none;
+    display: block;
+    width: 25.5%;
+    margin: 6% 3% 3% 3%;
+    float: left;
+    text-align: center;
+    padding:11% 0;
+    font-size: 13px;
+    color:white;
+
+    -moz-border-radius: 50%; /* or 50% */
+    border-radius: 50%;
+    display: inline-block;
+    border: 2.5px solid #feaa3a;
+}
+
+.icon i{
+    font-size: 1.5em;
+    margin: 30px 0;
+}
+
+/*---------Desktop--------*/
+@media screen and (min-width: 650px) {
+
+body{
+  text-align: left;
+}
+
+ul li{
+  text-align: left;
+}
+
+ul li:first-child{
+    width:39%;
+    padding-right:1%
+}
+
+.billboard ul li:first-child{
+    text-align: right;
+}
+
+.resize{
+  width:70%;
+  min-width: 150px;
+  max-width: 180px;
+  height: auto;
+  padding-right: 30px;
+
+}
+
+ul li:nth-child(2){
+    width:59%;
+    padding-left:1%;
+}
+
+.skill ul li{
+    list-style: none;
+    display: block;
+    width: 10.35%;
+    margin: 6% 3% 3% 3%;
+    float: left;
+    text-align: center;
+    padding:4.5% 0;
+    font-size: 1.2vw;
+    color:white;
+
+    -moz-border-radius: 50%; /* or 50% */
+    border-radius: 50%;
+    display: inline-block;
+    border: 2.5px solid #feaa3a;
+}
+
+.skill ul li:first-child{
+  margin-left: 1.5%;
+}
+
+.skill ul li:last-child{
+  margin-right: 0;
+}
+
+footer ul li{
+  margin:10px 0 30px 0;
+}
+
+footer ul li:first-child{
+  width:48%;
+  padding-right:1%;
+}
+
+footer ul li:nth-child(2){
+  width:48%;
+  padding-right:1%;
+  text-align: right;
+}
+
+.icon a{
+  margin-left: 10px;
+}
+
+.icon i{
+  margin:0;
+}
+}
+
+@media screen and (min-width: 800px) {
+
+
+.icon i{
+    font-size: 2em;
+}
+
+}
