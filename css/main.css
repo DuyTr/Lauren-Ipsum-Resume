@@ -69,8 +69,9 @@ a{
 
 .billboard{
   background: url('../images/birds.jpg') no-repeat;
-  background-size:cover;
   background-position: center;
+  background-size:cover;
+
 }
 
 .wrapper{
@@ -136,6 +137,15 @@ footer h2{
   border-color: #cccccc;
   font-size: 1.4em;
 }
+
+.parallax{
+  background-position: 50% 50%;
+  background-attachment:fixed;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+}
 /*---------Mobile------------*/
 body{
   text-align: center;
@@ -165,7 +175,7 @@ ul li{
     float: left;
     text-align: center;
     padding:11% 0;
-    font-size: 13px;
+    font-size: 2.5vw;
     color:white;
 
     -moz-border-radius: 50%; /* or 50% */
@@ -195,6 +205,11 @@ ul li:first-child{
     padding-right:1%
 }
 
+ul li:nth-child(2){
+    width:59%;
+    padding-left:1%;
+}
+
 .billboard ul li:first-child{
     text-align: right;
 }
@@ -208,10 +223,7 @@ ul li:first-child{
 
 }
 
-ul li:nth-child(2){
-    width:59%;
-    padding-left:1%;
-}
+
 
 .skill ul li{
     list-style: none;
