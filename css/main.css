@@ -27,9 +27,9 @@
 body{
     background: lightgrey;
     font-size: 16px;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
-    line-height: 1.15;
+    line-height: 1.4;
     font-family: 'Open-Sans', Arial, sans-serif;
 }
 
@@ -38,7 +38,7 @@ p {
 }
 
 h1              { font-size: 2.2em; margin: .25em 0 }
-h2              { font-size: 1.4em; margin: .250em 0 }
+h2              { font-size: 1.5em; margin: .250em 0 }
 h3              { font-size: 1.1em; margin: .25em 0 }
 h1, h2, h3, h4,
 h5, h6          { font-weight: bold }
@@ -46,6 +46,7 @@ h5, h6          { font-weight: bold }
 h2{
   border-bottom: 1px solid #333;
   padding-bottom: 5px;
+  text-transform: uppercase;
 }
 
 h3{
@@ -76,18 +77,20 @@ a{
 
 .wrapper{
     margin: 0 auto;
-    padding: 40px 8%;
+    padding: 40px 5%;
 }
 
 .caption{
     padding: 90px 0 30px 0;
-    text-align: center;
-    color: white
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .caption h1{
-  border-bottom:2px solid #333;
-  display: inline-block;
+  border-bottom:2px solid #feaa3a;
   padding:10px;
 }
 
@@ -119,8 +122,8 @@ a{
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('../images/clouds.jpg') no-repeat;
   background-size:cover;
   background-position: center;
-  text-align: center;
   color: white;
+  text-align: center;
 }
 
 .skill h2{
@@ -130,7 +133,7 @@ a{
 footer{
   background: black;
   color: white;
-  font-size: .8em;
+  font-size: 1.1rem;
 }
 
 footer h2{
@@ -163,30 +166,46 @@ ul li{
   text-align: center;
 }
 
+.container{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
 .info p{
   text-align: left;
 }
 
+.skill ul{
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-between;
+  list-style: none;
+
+}
+
 .skill ul li{
-    list-style: none;
-    display: block;
     width: 25.5%;
-    margin: 6% 3% 3% 3%;
-    float: left;
+    height: 110px;
+    line-height: 750%;
+    margin: 0 12px 18px 12px;
     text-align: center;
-    padding:11% 0;
-    font-size: 2.5vw;
-    color:white;
+    width: 110px;
 
     -moz-border-radius: 50%; /* or 50% */
     border-radius: 50%;
-    display: inline-block;
-    border: 2.5px solid #feaa3a;
+    border: 4px solid #feaa3a;
+}
+
+.icon{
+  margin: 20px 0;
 }
 
 .icon i{
     font-size: 1.5em;
-    margin: 30px 0;
 }
 
 /*---------Desktop--------*/
@@ -196,28 +215,32 @@ body{
   text-align: left;
 }
 
-ul li{
+.wrapper{
+    padding: 40px 8%;
+}
+
+.container{
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+}
+.container li{
   text-align: left;
 }
 
-ul li:first-child{
+.container li:first-child{
     width:39%;
-    padding-right:1%
 }
 
-ul li:nth-child(2){
+.container li:nth-child(2){
     width:59%;
-    padding-left:1%;
 }
 
-.billboard ul li:first-child{
-    text-align: right;
-}
 
 .resize{
   width:70%;
   min-width: 150px;
-  max-width: 180px;
+  max-width: 220px;
   height: auto;
   padding-right: 30px;
 
@@ -225,33 +248,8 @@ ul li:nth-child(2){
 
 
 
-.skill ul li{
-    list-style: none;
-    display: block;
-    width: 10.35%;
-    margin: 6% 3% 3% 3%;
-    float: left;
-    text-align: center;
-    padding:4.5% 0;
-    font-size: 1.2vw;
-    color:white;
-
-    -moz-border-radius: 50%; /* or 50% */
-    border-radius: 50%;
-    display: inline-block;
-    border: 2.5px solid #feaa3a;
-}
-
-.skill ul li:first-child{
-  margin-left: 1.5%;
-}
-
-.skill ul li:last-child{
-  margin-right: 0;
-}
-
-footer ul li{
-  margin:10px 0 30px 0;
+footer ul{
+  margin-bottom: 30px;
 }
 
 footer ul li:first-child{
@@ -265,8 +263,11 @@ footer ul li:nth-child(2){
   text-align: right;
 }
 
+.icon{
+  margin: 0;
+}
 .icon a{
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .icon i{
