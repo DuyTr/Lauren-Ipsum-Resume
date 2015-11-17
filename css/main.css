@@ -62,12 +62,6 @@ a{
   font-style: italic;
 }
 
-.clearfix:after {
-    content:"";
-    display: table;
-    clear: both;
-}
-
 .billboard{
   background: url('../images/birds.jpg') no-repeat;
   background-position: center;
